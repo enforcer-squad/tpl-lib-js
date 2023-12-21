@@ -39,5 +39,9 @@
   "rules": {
     "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
+    "no-unmodified-loop-condition": "off",
+    "promise/param-names": "off",
+    "react/display-name": "off",
+    "react/prop-types": "off",
   }
 }

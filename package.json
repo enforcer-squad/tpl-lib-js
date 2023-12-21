@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "library javascript template",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
@@ -14,6 +17,7 @@
     "version:major": "npx standard-version --release-as major",
     "version:minor": "npx standard-version --release-as minor",
     "version:patch": "npx standard-version --release-as patch",
+    "version:first": "standard-version --first-release",
     "release": "pnpm build && pnpm release:only",
     "release:only": "npm publish --registry=https://registry.npmjs.com/"
   },
@@ -97,6 +101,7 @@
     "webpack": "^5.89.0",
     "webpack-bundle-analyzer": "^4.10.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^4.15.1",
+    "webpack-node-externals": "^3.0.0"
   }
 }
