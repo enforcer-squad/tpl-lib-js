@@ -16,7 +16,7 @@ const devConfig = merge(baseConfig, {
     ...entries,
   },
   devServer: {
-    port: 2347,
+    port: 2345,
     hot: true,
     host: '0.0.0.0',
     client: {
